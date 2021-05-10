@@ -1,0 +1,11 @@
+{%extends 'design.html'%}
+{%block body%}
+	<form method='POST' action='{{url_for("delete")}}'>
+	<div class='form-group'>
+		<label for='delete'><span>Are you sure you want to delete this post?</span></label>
+		<br />
+		<button type='submit' class='btn btn-outline-warning' name={{post.p_id}} id='delete'>Delete</button>
+		<a href='{{url_for("home")}}' class='btn btn-outline-primary'>Cancel</a>
+	</div>
+	</form>
+{%endblock body%}

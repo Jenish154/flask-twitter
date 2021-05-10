@@ -1,0 +1,28 @@
+{%extends 'design.html'%}
+{%block body%}
+<h1 style={color:blue;}><b>Home</b><h1>
+{%for post in posts%}
+	<article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              
+              <a href='{{url_for("static",filename="pics/"+post.author.image)}}' class='mr-2'><img class="rounded-circle account-img" src='{{url_for("static",filename="pics/"+post.author.image)}}' alt='Image' height=100px width=100px></a>
+              <a class="mr-2" href="#">{{ post.author.name }}</a>
+              <small class="text-muted">{{ post.date.date() }}</small>
+            </div>
+            <p class="article-content">{{ post.content }}</p>
+            {%if post.author==current_user%}
+            <form method='POST' action='{{url_for("update_post")}}'><button type='submit' class='btn btn-outline-primary' name='{{post.p_id}}'><small>Update post</small></button></form>
+            <form method='POST' action='{{url_for("delete_post")}}'><button type='submit' class='btn btn-outline-warning' name='{{post.p_id}}'><small>Delete post</small></button></form>
+            {%endif%}
+          </div>
+        </article>
+        <hr>
+{%endfor%}
+<div>
+	<form method='POST'>
+	<textarea rows=5 cols=30 maxlength=1080 name='content' class='form-control'></textarea>
+	<button type='submit' class='btn btn-primary'>Post</button>
+	</form>
+</div>
+{%endblock body%}

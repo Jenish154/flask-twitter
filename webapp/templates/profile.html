@@ -1,0 +1,31 @@
+{%extends 'design.html'%}
+{%block body%}
+	<div class>
+      <div class>
+        <a href='{{image_file}}'><img class="rounded-circle account-img" src={{image_file}} alt='Image' height=400px width=400px></a>
+        <div>
+          <h2 class="account-heading">{{ current_user.name }}</h2>
+          <p class="text-secondary">{{ current_user.email }}</p>
+          <a href='{{url_for("upload")}}'>Change Profile</a>
+     </div>
+     <br />
+     <hr>
+     <div class='Container'>
+     <h3>Your Tweets</h3>
+		{%for post in posts%}
+			<article class="media content-section">
+         	 <div class="media-body">
+            	<div class="article-metadata">
+              	<a class="mr-2" href="#">{{ current_user.name }}</a>
+              	<small class="text-muted">{{ post.date.date()}}</small>
+            	</div>
+            <p class="article-content">{{ post.content }}</p>
+          	</div>
+          	
+        	</article>
+        	<form method='POST' action='{{url_for("update_post")}}'><button type='submit' class='btn btn-outline-primary' name='{{post.p_id}}'><small>Update post</small></button></form>
+        	<form method='POST' action='{{url_for("delete_post")}}'><button type='submit' class='btn btn-outline-warning' name='{{post.p_id}}'><small>Delete post</small></button></form>
+        	<hr>
+		{%endfor%}
+	</div>
+{%endblock body%}

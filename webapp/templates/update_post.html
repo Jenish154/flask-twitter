@@ -1,0 +1,9 @@
+{%extends 'design.html'%}
+{%block body%}
+	<form method='POST' action='{{url_for("change")}}'>
+		<div class='form-group'>
+			<textarea rows=5 cols=30 maxlength=1080 name='{{post.p_id}}' class='form-control' value='{{post.content}}'></textarea>
+			<button class='btn btn-outline-primary' type='submit'>Update</button>
+		</div>
+	</form>
+{%endblock body%}
