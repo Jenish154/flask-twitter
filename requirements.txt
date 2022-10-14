@@ -61,7 +61,7 @@ Pillow==7.1.2
 pillowcase==2.0.0
 playsound==1.2.2
 plyer==1.4.3
-protobuf==3.13.0
+protobuf==3.18.3
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pydantic==1.6.1
