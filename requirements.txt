@@ -42,7 +42,7 @@ Kivy==1.11.1
 Kivy-examples==1.11.1
 kvuilder==1.0.1
 lazy-object-proxy==1.5.0
-lxml==4.5.1
+lxml==4.9.1
 Markdown==3.3.1
 MarkupSafe==1.1.1
 mccabe==0.6.1
@@ -94,7 +94,7 @@ termcolor==1.1.0
 threadpoolctl==2.1.0
 toml==0.10.1
 typed-ast==1.4.1
-urllib3==1.25.10
+urllib3==1.26.5
 virtualenv==20.0.31
 Werkzeug==1.0.1
 wifi==0.3.8
