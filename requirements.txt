@@ -42,13 +42,13 @@ Kivy==1.11.1
 Kivy-examples==1.11.1
 kvuilder==1.0.1
 lazy-object-proxy==1.5.0
-lxml==4.5.1
+lxml==4.9.1
 Markdown==3.3.1
 MarkupSafe==1.1.1
 mccabe==0.6.1
 MechanicalSoup==0.12.0
 mysql-connector==2.2.9
-numpy==1.18.4
+numpy==1.22.2
 oauthlib==3.1.0
 opt-einsum==3.3.0
 pandas==1.0.3
@@ -64,7 +64,7 @@ plyer==1.4.3
 protobuf==3.13.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-pydantic==1.6.1
+pydantic==1.6.2
 pygame==2.0.0.dev8
 pygame-sdl2==2.1.0
 pyjnius==1.2.1
