@@ -34,7 +34,7 @@ idna==2.10
 isort==4.3.21
 itsdangerous==1.1.0
 jedi==0.17.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 joblib==0.14.1
 Keras==2.4.3
 Keras-Preprocessing==1.1.2
@@ -61,7 +61,7 @@ Pillow==7.1.2
 pillowcase==2.0.0
 playsound==1.2.2
 plyer==1.4.3
-protobuf==3.13.0
+protobuf==3.18.3
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pydantic==1.6.1
@@ -94,7 +94,7 @@ termcolor==1.1.0
 threadpoolctl==2.1.0
 toml==0.10.1
 typed-ast==1.4.1
-urllib3==1.25.10
+urllib3==1.26.5
 virtualenv==20.0.31
 Werkzeug==1.0.1
 wifi==0.3.8
