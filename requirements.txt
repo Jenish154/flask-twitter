@@ -34,7 +34,7 @@ idna==2.10
 isort==4.3.21
 itsdangerous==1.1.0
 jedi==0.17.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 joblib==0.14.1
 Keras==2.4.3
 Keras-Preprocessing==1.1.2
@@ -99,3 +99,4 @@ virtualenv==20.0.31
 Werkzeug==1.0.1
 wifi==0.3.8
 wrapt==1.12.1
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
