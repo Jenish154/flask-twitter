@@ -96,6 +96,6 @@ toml==0.10.1
 typed-ast==1.4.1
 urllib3==1.25.10
 virtualenv==20.0.31
-Werkzeug==1.0.1
+Werkzeug==3.0.6
 wifi==0.3.8
 wrapt==1.12.1
