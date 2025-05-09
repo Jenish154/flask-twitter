@@ -14,7 +14,7 @@ click==7.1.2
 cmake==3.17.2
 Cython==0.29.21
 distlib==0.3.1
-Django==3.1
+Django==4.2.21
 examples==1.0.2
 filelock==3.0.12
 Flask==1.1.2
@@ -99,3 +99,4 @@ virtualenv==20.0.31
 Werkzeug==1.0.1
 wifi==0.3.8
 wrapt==1.12.1
+setuptools>=78.1.1 # not directly required, pinned by Snyk to avoid a vulnerability
