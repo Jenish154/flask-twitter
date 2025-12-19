@@ -16,7 +16,7 @@ Cython==0.29.21
 distlib==0.3.1
 Django==3.1
 examples==1.0.2
-filelock==3.0.12
+filelock==3.20.1
 Flask==1.1.2
 Flask-Images==3.0.2
 Flask-Login==0.5.0
